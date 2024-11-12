@@ -8,7 +8,8 @@ from torch.utils.data import DataLoader
 import torch.nn as nn
 from torch.utils.data import DataLoader, Subset
 import pandas as pd
-from cub_dataset import Cub2011
+
+from .cub_dataset import Cub2011
 
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
 
